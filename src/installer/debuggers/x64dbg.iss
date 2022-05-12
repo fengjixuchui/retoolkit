@@ -1,4 +1,5 @@
-; snapshot_2021-05-08_14-17
+; snapshot_2022-04-11_01-01
+; https://x64dbg.com/
 
 [Components]
 Name: "debuggers\x64dbg"; Description: "x64dbg + plugins + scripts"; Types: full compact;

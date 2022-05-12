@@ -1,4 +1,5 @@
-; v9.12
+; v9.33
+; https://www.winitor.com
 
 [Components]
 Name: "peanalysers\pestudio"; Description: "pestudio"; Types: full;

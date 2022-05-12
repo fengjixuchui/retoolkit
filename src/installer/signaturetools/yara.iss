@@ -1,4 +1,5 @@
-; v4.0.5
+; v4.2.1
+; https://github.com/VirusTotal/yara
 
 [Components]
 Name: "signaturetools\yara"; Description: "YARA"; Types: full;

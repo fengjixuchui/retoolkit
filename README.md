@@ -1,8 +1,10 @@
+__English__ || [Türkçe](./README_tr_TR.md) || [Français](./README_fr_FR.md) || [中文简体](./README_zh_CN.md)
+
 # Reverse Engineer's Toolkit
 
 ## What?
 
-This is a collection of tools you may like if you are interested on reverse engineering and/or malware analysis on x86 and x64 Windows systems. After installing this program, you'll have to ways to access the tools:
+This is a collection of tools you may like if you are interested in reverse engineering and/or malware analysis on x86 and x64 Windows systems. After installing this program, you'll have two ways to access the tools:
 
 * Double-click the `retoolkit` icon in the Desktop.
 * Right-click on a file, choose `Send to -> retoolkit`. This way the selected file is passed as argument to the desired program.
@@ -11,7 +13,7 @@ This is a collection of tools you may like if you are interested on reverse engi
 
 ## Why do I need it?
 
-You don't. Obviously, you can download such tools from their own website and install them by yourself in a new VM. But if you download retoolkit, it can probably save you some time. Additionally, the tools come pre-configured so you'll find things like x64dbg with a few plugins, command-line tools working from any directory, etc. You may like it if you're setting up a new analysis VM.
+You don't. Obviously, you can download such tools from their own website and install them by yourself in a new VM. But if you download retoolkit, it will probably save you some time. Additionally, the tools come pre-configured so you'll find things like x64dbg with a few plugins, command-line tools working from any directory, etc. You may like it if you're setting up a new analysis VM.
 
 ## Download
 
@@ -27,22 +29,65 @@ I don't know. Some included tools are not open source and come from shady places
 
 ## Can you add tool X?
 
-It depends. The idea is to keep it simple. We won't add a tool just because it's not here yet. But if you think there's a good reason to do so, and the license allows us to redistribuite the software, please [open an issue here](https://github.com/mentebinaria/retoolkit/issues?q=label%3Atool-request+) if it doesn't exit yet.
+It depends. The idea is to keep it simple. We won't add a tool just because it's not here yet. But if you think there's a good reason to do so, and the license allows us to redistribute the software, please [open an issue here](https://github.com/mentebinaria/retoolkit/issues?q=label%3Atool-request+) if it doesn't exist yet.
 
 ## Changelog
 
+### 2022.04
+
+* Added:
+    * Echo Mirage.
+    * elfparser-ng.
+    * entropy \[[#47](https://github.com/mentebinaria/retoolkit/issues/47)\].
+    * Force Toolkit.
+    * MiniDump x64dbg plugin.
+    * Notepad++.
+    * OllyDumpEx x64dbg plugin \[[#41](https://github.com/mentebinaria/retoolkit/issues/41)\].
+* Removed:
+    * Bewareircd: Too specific to analyze (now rare?) IRC-based communications.
+    * dnSpy: Replaced by dnSpyEx.
+    * HyperDBG: It's a nice project, but they don't provide binary releases yet, meaning a lot of work for me.
+    * JRE: Replaced by JDK, which is required by Ghidra.
+    * Threadtear: It doesn't work with JDK required by Ghidra.
+
+### 2021.10
+
+* Yeah, new version numbering scheme borrowed from Ubuntu releases. :)
+* Reorganized MSI analysis tools under OLE tools section.
+* Updated current tools.
+* Fixed pev PATH.
+* Fixed SendTo+ license issue \[[#34](https://github.com/mentebinaria/retoolkit/issues/34)\].
+* Lots of new functions added to SlothBP x64dbg plugin configuration.
+* New DIE signatures added.
+* Tools added:
+    * Dev-C++ compiler.
+    * Java 8 Runtime Environment, needed by Java tools.
+    * Python 3 (via WinPython), mainly to support Python-based tools.
+    * XLMMacroDeobfuscator.
+    * dnSpyEx (new, maintained dnSpy fork).  
+    * oledump.
+    * oletools \[[#33](https://github.com/mentebinaria/retoolkit/issues/33)\].
+    * pdfid.py.
+    * pdf-parser.py
+    * MapoAnalyzer x64dbg plugin.
+    * xSelectBlock x64dbg plugin.
+    * redress.
+    * hollows_hunter.
+    * HyperDbg.
+    * Threadtear.
+    * 1768.py.
+    * CobaltStrikeScan.
+    * dex2jar.
+
 ### v2021d
 
+* Added JADX.
 * Better organization based on target file type.
-* Removed Start Menu shortcuts.
 * New context menu (right-click on a file -> Send to -> retoolkit).
-* fasm now opens .asm files if you double-click on them.
-* Tools added: JADX, Cutter and PE-sieve.
-* Tools upaded to the latest version.
+* Removed Start Menu shortcuts.
+* Tools updated to their latest version.
 * Updated Error Lookup tool to a different one, with more features.
-* A few tools have their path added to user's PATH environment variable.
-* New icon. Thanks to [@pauloarruzzo](https://twitter.com/pauloarruzzo).
+* fasm now opens .asm files if you double-click them.
 
 ### v2021c
-
 * First public release.
